@@ -15,6 +15,16 @@ public class DemoApplication {
 
 	@GetMapping("/")
 	public String helloWelcome(){
-		return "Welcome, this is just for test.";
+		return "Welcome, this is a profile app!";
 	}
+
+	@GetMapping("/tobi/")
+	public String profile1(){
+		return "I am a Devops Engineer";
+	}
+
+	@GetMapping("/wale/")
+        public String profile2(){
+                return "I am a Software Architect";
+        }
 }
