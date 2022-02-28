@@ -1,1 +1,1 @@
-# spring-demo
+# spring-app
