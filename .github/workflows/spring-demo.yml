@@ -40,5 +40,5 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-demo:v1
-          cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/spring-demo:v1
-          cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/spring-demo,mode=max
+#           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/spring-demo:v1
+#           cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/spring-demo,mode=max
