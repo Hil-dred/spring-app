@@ -13,7 +13,7 @@ jobs:
       
       - name: Echoing
         run: |
-            echo FUCK YOU TOBI!!!
+            echo Connecting......
 
       - name: AWS SSM Send-Command
         uses: peterkimzz/aws-ssm-send-command@master
@@ -26,7 +26,9 @@ jobs:
             working-directory: /home/spring-demo-project
             command: /bin/sh ./gitactions_pipeline_bash.sh
 
-
+      - name: Echoing
+        run: |
+            echo Job Completed!
 
 
 
