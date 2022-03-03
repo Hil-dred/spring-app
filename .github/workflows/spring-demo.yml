@@ -10,6 +10,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Echoing
+        run: |
+            echo Apartment...
 
       - name: AWS SSM Send-Command
         uses: peterkimzz/aws-ssm-send-command@master
