@@ -10,11 +10,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      
-      - name: Echo Instance ID
-        run: |
-            echo  ${{ secrets.INSTANCE_ID  }
-
 
       - name: AWS SSM Send-Command
         uses: peterkimzz/aws-ssm-send-command@master
