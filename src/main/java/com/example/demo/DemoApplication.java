@@ -27,4 +27,10 @@ public class DemoApplication {
         public String profile2(){
                 return "I am a Software Architect";
         }
+
+
+        @GetMapping("/brenda/")
+        public String profile3(){
+                return "I am a Packaging and Development Officer";
+        }
 }
