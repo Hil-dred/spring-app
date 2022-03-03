@@ -13,7 +13,7 @@ jobs:
       
       - name: Echoing
         run: |
-            echo ${{ secrets.INSTANCE_ID  }}
+            echo FUCK YOU TOBI!!!
 
       - name: AWS SSM Send-Command
         uses: peterkimzz/aws-ssm-send-command@master
