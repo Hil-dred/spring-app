@@ -23,7 +23,7 @@ jobs:
             aws-region: us-east-2
             instance-ids: ${{ secrets.INSTANCE_ID  }}
             comment: Deploy the master branch
-            working-directory: /home/spring-demo-project
+            working-directory: /home/spring-demo-project/spring-app
             command: /bin/sh ./gitactions_pipeline_bash.sh
 
       - name: Echoing
