@@ -13,7 +13,8 @@ jobs:
       
       - name: Echoing
         run: |
-            echo Connecting......
+            echo Running Job.........
+            echo Connecting to AWS.......
 
       - name: AWS SSM Send-Command
         uses: peterkimzz/aws-ssm-send-command@master
@@ -23,7 +24,7 @@ jobs:
             aws-region: us-east-2
             instance-ids: ${{ secrets.INSTANCE_ID  }}
             comment: Deploy the master branch
-            working-directory: /home/spring-demo-project/spring-app
+            working-directory: /home/ubuntu/spring-demo-project/spring-app
             command: /bin/sh ./gitactions_pipeline_bash.sh
 
       - name: Echoing
