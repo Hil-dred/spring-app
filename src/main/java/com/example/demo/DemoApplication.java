@@ -33,4 +33,10 @@ public class DemoApplication {
         public String profile3(){
                 return "I am a Packaging and Development Officer";
         }
+
+        @GetMapping("/rasheedat/")
+        public String profile4(){
+                return "I am a Fashion Designer";
+        }
+
 }
