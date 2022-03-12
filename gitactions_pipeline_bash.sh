@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#gitactiona script
 
 git pull origin master
 mvn package
