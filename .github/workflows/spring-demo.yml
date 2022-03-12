@@ -25,8 +25,16 @@ jobs:
             instance-ids: ${{ secrets.INSTANCE_ID  }}
             comment: Deploy the master branch
             working-directory: /home/ubuntu/spring-demo-project/spring-app
-            command: /bin/sh ./gitactions_pipeline_bash.sh
-
+      
+      - name: Run Bash Script
+        run: |
+            echo Running Script......
+            git pull origin master
+            mvn package
+            docker build -t hildredadebayo/spring-demo:latest .
+            docker run -d --rm -p 7030:8080 hildredadebayo/spring-demo:latest 
+            sudo systemctl restart nginx
+            
       - name: Echoing
         run: |
             echo Job Completed!
