@@ -28,13 +28,12 @@ jobs:
         
 
 #      - name: Run Bash
-            run: |
-                echo Running Script!
-                git pull origin main
-                mvn package
-                docker build -t hildredadebayo/spring-demo:latest .
-                docker run -d --rm -p 7030:8080 hildredadebayo/spring-demo:latest 
-                sudo systemctl restart nginx
+            command:    echo Running Script!
+                        git pull origin main
+                        mvn package
+                        docker build -t hildredadebayo/spring-demo:latest .
+                        docker run -d --rm -p 7030:8080 hildredadebayo/spring-demo:latest 
+                        sudo systemctl restart nginx
 
       - name: Echoing
         run: |
