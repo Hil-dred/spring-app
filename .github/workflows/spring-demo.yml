@@ -30,7 +30,7 @@ jobs:
       - name: Run Bash
         run: |
             echo Running Script!
-            echo $USER
+            echo SERVER == $USER
             git pull origin main
             mvn package
             #docker kill hildredadebayo/spring-demo:latest
