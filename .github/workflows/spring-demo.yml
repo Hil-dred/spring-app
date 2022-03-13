@@ -25,7 +25,7 @@ jobs:
             instance-ids: ${{ secrets.INSTANCE_ID  }}
             comment: Deploy the master branch
             working-directory: /home/ubuntu/spring-demo-project/spring-app
-            command: ls
+            run: ls
             
         
 
