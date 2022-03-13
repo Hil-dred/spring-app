@@ -25,7 +25,8 @@ jobs:
             instance-ids: ${{ secrets.INSTANCE_ID  }}
             comment: Deploy the master branch
             working-directory: /home/ubuntu/spring-demo-project/spring-app
-            command: /bin/bash ./gitactions_pipeline_bash.sh
+            command: ls
+            
         
 
 #       - name: Run Bash
