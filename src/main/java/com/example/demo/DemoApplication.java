@@ -36,12 +36,12 @@ public class DemoApplication {
 
         @GetMapping("/rasheedat/")
         public String profile4(){
-                return "I am a Fashion Designer";
+                return "I am a Fashion Designer. My major designs are for hijabis";
         }
 
 	@GetMapping("/finally/")
         public String profile5(){
-                return "Hallelujah!! My pipeline if finally working!!!";
+                return "Hallelujah!! My pipeline is finally working!!!";
         }
 
 
