@@ -39,4 +39,10 @@ public class DemoApplication {
                 return "I am a Fashion Designer";
         }
 
+	@GetMapping("/finally/")
+        public String profile4(){
+                return "Hallelujah!! My pipeline if finally working!!!";
+        }
+
+
 }
