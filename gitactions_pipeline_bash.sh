@@ -1,4 +1,5 @@
 #!/bin/bash
+## Gitactions Pipeline
 
 git pull origin main
 mvn package
