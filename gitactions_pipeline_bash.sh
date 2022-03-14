@@ -1,8 +1,6 @@
 #!/bin/bash
 
-#gitactiona script
-
-git pull origin master
+git pull origin main
 mvn package
 #docker kill hildredadebayo/spring-demo:latest
 #docker rmi hildredadebayo/spring-demo:latest -f
