@@ -8,6 +8,6 @@ mvn package
 docker build -t hildredadebayo/spring-demo:latest .
 #docker login
 #docker push hildredadebayo/spring-demo:latest
-docker run -d --rm -p 7030:8080 hildredadebayo/spring-demo:latest 
+docker run -d --rm -p 7070:8080 hildredadebayo/spring-demo:latest 
 sudo systemctl restart nginx
 

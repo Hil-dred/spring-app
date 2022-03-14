@@ -40,7 +40,7 @@ public class DemoApplication {
         }
 
 	@GetMapping("/finally/")
-        public String profile4(){
+        public String profile5(){
                 return "Hallelujah!! My pipeline if finally working!!!";
         }
 
