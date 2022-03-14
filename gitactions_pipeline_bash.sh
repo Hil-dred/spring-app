@@ -3,8 +3,8 @@
 
 git pull origin main
 mvn package
-#docker kill hildredadebayo/spring-demo:latest
-#docker rmi hildredadebayo/spring-demo:latest -f
+docker kill hildredadebayo/spring-demo:latest
+docker rmi hildredadebayo/spring-demo:latest -f
 docker build -t hildredadebayo/spring-demo:latest .
 #docker login
 #docker push hildredadebayo/spring-demo:latest
