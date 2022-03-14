@@ -31,7 +31,7 @@ public class DemoApplication {
 
         @GetMapping("/brenda/")
         public String profile3(){
-                return "I am a Packaging and Development Officer";
+                return "I am a Packaging and Development Officer, looking into becoming a Software Tester";
         }
 
         @GetMapping("/rasheedat/")
