@@ -46,7 +46,7 @@ public class DemoApplication {
 
 
         @GetMapping("/dream/")
-        public String profile5(){
+        public String profile6(){
                 return "Gradually my dreams are coming to pass.......";
         }
 
