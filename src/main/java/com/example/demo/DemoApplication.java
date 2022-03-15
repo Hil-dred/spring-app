@@ -15,7 +15,7 @@ public class DemoApplication {
 
 	@GetMapping("/")
 	public String helloWelcome(){
-		return "Welcome, this is a profile app!";
+		return "Welcome, this is a profile app! Somewhat called a diary of persons.......Enjoy";
 	}
 
 	@GetMapping("/tobi/")
@@ -42,6 +42,12 @@ public class DemoApplication {
 	@GetMapping("/finally/")
         public String profile5(){
                 return "Hallelujah!! My pipeline is finally working!!!";
+        }
+
+
+        @GetMapping("/dream/")
+        public String profile5(){
+                return "Gradually my dreams are coming to pass.......";
         }
 
 
